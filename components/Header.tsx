@@ -28,8 +28,11 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
             className="logo-img" 
           />
           {/* Added "SDI Solutions" text here */}
-          <span className="logo-text">SDI Solutions</span>
-        </div>
+     <h1>
+          <span className="highlight">Your </span>{' '}
+          SDI Solutions{' '}
+      
+        </h1>        </div>
 
         {/* Navigation Links Section */}
         <nav id="main-nav">
