@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page } from '../types';
+
 interface HeaderProps {
   currentPage: Page;
   setCurrentPage: (page: Page) => void;
@@ -20,6 +21,8 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
         <div 
           className="logo-container"
           onClick={() => setCurrentPage(Page.Home)}
+          // Using inline style to enable Flexbox and add a 15px gap
+          style={{ display: 'flex', alignItems: 'center', gap: '15px' }} 
         >
          
           <img 
@@ -27,7 +30,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
             alt="Lycaon Logo" 
             className="logo-img" 
           />
-          {/* Corrected the title to be "SDI Solutions" */}
+          {/* Corrected title: SDI Solutions */}
           <h1>
             SDI Solutions
           </h1>
