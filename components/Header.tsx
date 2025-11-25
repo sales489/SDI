@@ -27,7 +27,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
          
           <img 
             src="/Images/logo.png" 
-            alt="Lycaon Logo" 
+            alt="SDI Solutions Logo" 
             className="logo-img" 
           />
           {/* Corrected title: SDI Solutions */}
