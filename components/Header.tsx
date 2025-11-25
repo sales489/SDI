@@ -10,7 +10,7 @@ interface HeaderProps {
 const navItems = [
   { label: 'Home', page: Page.Home },
   { label: 'Our Services', page: Page.Services },
-  { label: 'Our Goals', page: Page.Collaboration },
+  { label: 'Our Misson', page: Page.Collaboration },
 ];
 
 
