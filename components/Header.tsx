@@ -13,7 +13,6 @@ const navItems = [
 ];
 
 
-
 function Header({ currentPage, setCurrentPage }: HeaderProps) {
   return (
     <header id="main-header">
@@ -28,6 +27,8 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
             alt="Lycaon Logo" 
             className="logo-img" 
           />
+          {/* Added "SDI Solutions" text here */}
+          <span className="logo-text">SDI Solutions</span>
         </div>
 
         {/* Navigation Links Section */}
