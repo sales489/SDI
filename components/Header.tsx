@@ -31,7 +31,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
             className="logo-img" 
           />
           {/* Corrected title: SDI Solutions */}
-          <h1>
+          <h1 style={{ color: 'black' }}>
             SDI Solutions
           </h1>
         </div>
