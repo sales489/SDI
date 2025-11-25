@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import '../../globals.css'; // <-- Corrected path to the project root
 export const metadata: Metadata = {
-  title: 'Rohit Portfolio - Web Developer',
+  title: "SDI Solutions",
   description: 'A portfolio showcasing my skills and projects in web development.',
 };
 
