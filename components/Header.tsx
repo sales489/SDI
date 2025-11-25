@@ -27,12 +27,11 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
             alt="Lycaon Logo" 
             className="logo-img" 
           />
-          {/* Added "SDI Solutions" text here */}
-     <h1>
-          <span className="highlight">Your </span>{' '}
-          SDI Solutions{' '}
-      
-        </h1>        </div>
+          {/* Corrected the title to be "SDI Solutions" */}
+          <h1>
+            SDI Solutions
+          </h1>
+        </div>
 
         {/* Navigation Links Section */}
         <nav id="main-nav">
