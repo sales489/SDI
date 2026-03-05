@@ -1,5 +1,4 @@
 import React from 'react';
-import { Page } from '../types';
 
 interface HeaderProps {
   currentPage: Page;
@@ -8,9 +7,9 @@ interface HeaderProps {
 
 // The navigation items are stored in an array of objects for easier mapping.
 const navItems = [
-  { label: 'Home', page: Page.Home },
-  { label: 'Our Services', page: Page.Services },
-  { label: 'Our Misson', page: Page.Collaboration },
+  { label: 'Home', page: Home },
+  { label: 'Our Services', page: Services },
+  { label: 'Our Misson', page: Collaboration },
 ];
 
 
@@ -20,14 +19,14 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
       <div className="container header-container">
         <div 
           className="logo-container"
-          onClick={() => setCurrentPage(Page.Home)}
+          onClick={() => setCurrentPage(Page)}
           // Using inline style to enable Flexbox and add a 15px gap
-          style={{ display: 'flex', alignItems: 'center', gap: '15px' }} 
+          style={{ display: 'flex', alignItems: 'center: '15px' }} 
         >
          
           <img 
-            src="/Images/logo.png" 
-            alt="SDI Solutions Logo" 
+            src="/Images/png" 
+            alt="SDI Solutions" 
             className="logo-img" 
           />
           {/* Corrected title: SDI Solutions */}
@@ -43,7 +42,7 @@ function Header({ currentPage, setCurrentPage }: HeaderProps) {
               key={item.label}
               onClick={() => setCurrentPage(item.page)}
               // Dynamically apply the 'active' class based on the current page.
-              className={currentPage === item.page ? 'active' : ''}
+              className={currentPage === item.page ? 'active'}
             >
               {item.label}
             </button>
